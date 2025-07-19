@@ -551,90 +551,105 @@ export default function Home() {
   {/* Portfolio End */}
 
     {/* Contact Start */}
-  <div className="contact" id="contact">
-    <div className="container">
-      <div className="section-header">
-        <h3>Contact Me</h3>
-        <p>Feel free to reach out to me for any inquiries or collaborations.</p>
-      </div>
-      <div className="row align-items-center">
-        <div className="col-md-6">
-          <div className="contact-info">
-            <p>
-              <i className="fa fa-user" /> Muhammad Talha
-            </p>
-            <p>
-              <i className="fa fa-tag" />
-              Web Developer
-            </p>
-            <p>
-              <i className="fa fa-map-marker" />
-              ....
-            </p>
-            <p>
-              <i className="fa fa-envelope" />
-              <a href="mailto:info@example.com">talharahman426@gmail.com</a>
-            </p>
-            <p>
-              <i className="fa fa-phone" />
-              <a href="tel:+1234567890">+92 3158077033</a>
-            </p>
-            <div className="social">
-              <a href="https://web.facebook.com/mano.talha.940" target="_blank">
-                <i className="fa fa-facebook" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/muhammad-talha-54045a300/"
-                target="_blank"
-              >
-                <i className="fa fa-linkedin" />
-              </a>
-            </div>
+{/* Contact Start */}
+<div className="contact" id="contact">
+  <div className="container">
+    <div className="section-header">
+      <h3>Contact Me</h3>
+      <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+    </div>
+    <div className="row align-items-center">
+      <div className="col-md-6">
+        <div className="contact-info">
+          <p>
+            <i className="fa fa-user" /> Muhammad Talha
+          </p>
+          <p>
+            <i className="fa fa-tag" />
+            Web Developer
+          </p>
+          <p>
+            <i className="fa fa-map-marker" />
+            ....
+          </p>
+          <p>
+            <i className="fa fa-envelope" />
+            <a href="mailto:talharahman426@gmail.com">talharahman426@gmail.com</a>
+          </p>
+          <p>
+            <i className="fa fa-phone" />
+            <a href="tel:+923158077033">+92 3158077033</a>
+          </p>
+          <div className="social">
+            <a href="https://web.facebook.com/mano.talha.940" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-facebook" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammad-talha-54045a300/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-linkedin" />
+            </a>
           </div>
         </div>
-        <div className="col-md-6">
-          <div className="form">
-            <form action="" method="">
-              <div className="form-row">
-                <div className="form-group col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div className="form-group col-md-6">
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Your Email"
-                  />
-                </div>
-              </div>
-              <div className="form-group">
+      </div>
+      <div className="col-md-6">
+        <div className="form">
+          <form 
+            action="https://formsubmit.co/talharahman426@gmail.com" 
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <div className="form-row">
+              <div className="form-group col-md-6">
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Subject"
+                  name="name"
+                  placeholder="Your Name"
+                  required
                 />
               </div>
-              <div className="form-group">
-                <textarea
+              <div className="form-group col-md-6">
+                <input
+                  type="email"
                   className="form-control"
-                  rows={5}
-                  placeholder="Message"
-                  defaultValue={""}
+                  name="email"
+                  placeholder="Your Email"
+                  required
                 />
               </div>
-              <div>
-                <button type="submit">Send Message</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <textarea
+                className="form-control"
+                name="message"
+                rows={5}
+                placeholder="Message"
+                required
+              />
+            </div>
+            <div>
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
+</div>
+{/* Contact End */}
+
   {/* Contact End */}
 
     {/* Footer Start */}
