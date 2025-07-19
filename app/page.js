@@ -657,11 +657,11 @@ export default function Home() {
     <div className="container">
       <div className="copyright">
         <p>
-          © Copyright <a href="https://htmlcodex.com"> Coder boy</a>. All Rights
+          © Copyright <a href="/"> Coder boy</a>. All Rights
           Reserved
         </p>
         <p>
-          Powered by <a href="https://htmlcodex.com">Muhammad Talha</a>
+          Powered by <a href="/">Muhammad Talha</a>
         </p>
       </div>
     </div>
